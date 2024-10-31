@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Confiar Inmobiliaria</title>
+</head>
+<body>
+
+    <!-- Header con el menú de navegación -->
+    <header>
+        <h1>Confiar Inmobiliaria</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./propiedadesVenta.html">Propiedades en Venta</a></li>
+                <li><a href="./propiedadesArriendo.html">Propiedades en Arriendo</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de propiedades en venta y arriendo -->
+    <main>
+        <h2>Nuestras Propiedades</h2>
+        <div class="tab-menu">
+            <button class="tab-button" onclick="location.href='propiedadesVenta.html'">Propiedades en venta</button>
+            <button class="tab-button" onclick="location.href='propiedadesArriendo.html'">Propiedades en arriendo</button>
+        </div>
+
+        <!-- Lista de propiedades en venta -->
+        <section id="venta" class="propiedades">
+            <div class="propiedad">
+                <img src="./Imagenes/Poblado.jpg" alt="Propiedad en venta 1">
+                <h3>Casa en el Poblado</h3>
+                <p>Precio: $4,500,000,000</p>
+            </div>
+            <div class="propiedad">
+                <img src="./Imagenes/apto palmas.jpg" alt="Propiedad en venta 2">
+                <h3>Apartamento moderno</h3>
+                <p>Precio: $2,000,000,000</p>
+            </div>
+        </section>
+
+        <!-- Lista de propiedades en arriendo (oculta inicialmente) -->
+        <section id="arriendo" class="propiedades oculto">
+            <div class="propiedad">
+                <img src="propiedad3.jpg" alt="Propiedad en arriendo 1">
+                <h3>Apartamento en el norte</h3>
+                <p>Arriendo: $800 / mes</p>
+            </div>
+            <div class="propiedad">
+                <img src="propiedad4.jpg" alt="Propiedad en arriendo 2">
+                <h3>Casa en las afueras</h3>
+                <p>Arriendo: $1,200 / mes</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer con información de contacto -->
+    <footer>
+        <p>Contacto: inmobiliaria@xyz.com | Teléfono: +123 456 789</p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -9,8 +9,23 @@
 <body>
 
     <!-- Header con el menú de navegación -->
+    <div class="header-1">
+        <nav class="nav-1">
+            <a target="_blank" href="https://www.facebook.com/p/Confiarinmobiliaria-Carrera-89-48-E-15-100054337578746/" rel="noopener">
+                <!-- Imagen de Facebook -->
+                 <img src="./Imagenes/logos--facebook.svg" alt="logo-Facebook">
+            </a>
+            <a target="_blank" href="#">
+                <!-- Imagen de WhatsApp-->
+                 <img src="./Imagenes/logos--whatsapp-icon.svg" alt="logo-WhatsApp">
+            </a>
+            <a href="#">
+                | (604) 4447913
+            </a>
+        </nav>
+    </div>
     <header>
-        <h1>Confiar Inmobiliaria</h1>
+        <img src="./Imagenes/logoInmobiliaria.svg" alt="logo-Inmobiliaria"></img>
         <nav>
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
@@ -23,6 +38,7 @@
 
     <!-- Sección de propiedades en venta y arriendo -->
     <main>
+        
         <h2>Nuestras Propiedades</h2>
         <div class="tab-menu">
             <button class="tab-button" onclick="location.href='propiedadesVenta.html'">Propiedades en venta</button>
@@ -63,6 +79,14 @@
         <p>Contacto: confiar.inmobiliaria@gmail.com | Teléfono: (604) 4447913 | Celular: 301 7369427</p>
     </footer>
 
+    <!-- Modal -->
+     <div id="modal" class="modal-oculto">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+     </div>
     <script src="./main.js"></script>
 </body>
 </html>

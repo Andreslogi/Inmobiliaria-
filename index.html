@@ -13,11 +13,11 @@
         <nav class="nav-1">
             <a target="_blank" href="https://www.facebook.com/p/Confiarinmobiliaria-Carrera-89-48-E-15-100054337578746/" rel="noopener">
                 <!-- Imagen de Facebook -->
-                 <img src="./Imagenes/logos--facebook.svg" alt="logo-Facebook">
+                <img src="./Imagenes/logos--facebook.svg" alt="logo-Facebook">
             </a>
             <a target="_blank" href="#">
                 <!-- Imagen de WhatsApp-->
-                 <img src="./Imagenes/logos--whatsapp-icon.svg" alt="logo-WhatsApp">
+                <img src="./Imagenes/logos--whatsapp-icon.svg" alt="logo-WhatsApp">
             </a>
             <a href="#">
                 | (604) 4447913
@@ -73,20 +73,35 @@
             </div>
         </section>
     </main>
+    
+    <!-- Modal -->
+    <div id="modal" class="modal-oculto">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div class="carrusel">
+                <img src="" alt="" id="carrusel-img">
+                <img src="" alt="" id="carrusel-img">
+                <img src="" alt="" id="carrusel-img">
+                <img src="" alt="" id="carrusel-img">
+                <button class="prev" onclick="cambiarImg(-1)">&#10094;</button>
+                <button class="next" onclick="cambiarImg(1)">&#10095;</button>
+            </div>
+            <div class="mini-galery">
+                <img src="./Imagenes/img1.jpeg" alt="Miniatura 1" class="miniatura" onclick="cambiarImgDesdeMiniatura(0)">
+                <img src="./Imagenes/img2.jpeg" alt="Miniatura 2" class="miniatura" onclick="cambiarImgDesdeMiniatura(1)">
+                <img src="./Imagenes/img3.jpeg" alt="Miniatura 3" class="miniatura" onclick="cambiarImgDesdeMiniatura(2)">
+                <img src="./Imagenes/img4.jpeg" alt="Miniatura 4" class="miniatura" onclick="cambiarImgDesdeMiniatura(3)">
+            </div>
+            <p id="modal-description"></p>
+        </div>
+    </div>
 
     <!-- Footer con información de contacto -->
     <footer>
         <p>Contacto: confiar.inmobiliaria@gmail.com | Teléfono: (604) 4447913 | Celular: 301 7369427</p>
     </footer>
 
-    <!-- Modal -->
-     <div id="modal" class="modal-oculto">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-description"></p>
-        </div>
-     </div>
     <script src="./main.js"></script>
 </body>
 </html>

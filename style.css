@@ -172,6 +172,7 @@ footer {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Ancho del modal*/
+    max-height: 80%;
 }
 
 .close {
@@ -186,6 +187,56 @@ footer {
     color: #FF0000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.carrusel {
+    position: relative;
+    text-align: center;
+}
+
+.carrusel img {
+    width: 450px;
+    max-height: 450px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: #fefefe;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.mini-galery {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.miniatura {
+    width: 80px;
+    height: auto;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.6; /* Para dar un efecto de desvanecimiento*/
+    transition: opacity 0.3s;
+}
+
+.miniatura:hover {
+    opacity: 1;
 }
 
 @media (max-width: 768px) {
